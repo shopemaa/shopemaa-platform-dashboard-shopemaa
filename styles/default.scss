@@ -1,32 +1,126 @@
-// Custom styles
-@use './utility';
-@use './table';
+/* shopemaa-theme.css */
 
+/* Import font */
 @import url('https://rsms.me/inter/inter.css');
 
+/* Theme variables */
 :root {
-  --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+  --shopemaa-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  --shopemaa-brand: #de3210;
+  --shopemaa-brand-rgb: 222, 50, 16;
+
+  --shopemaa-bg: #f7f8fa;
+  --shopemaa-bg-card: #ffffff;
+
+  --shopemaa-text: #212529;
+  --shopemaa-text-muted: #6c757d;
+
+  --shopemaa-border: #e5e7eb;
+  --shopemaa-border-radius: 0.75rem;
+
+  --shopemaa-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shopemaa-shadow-md: 0 3px 18px rgba(0, 0, 0, 0.12);
+  --shopemaa-shadow-lg: 0 8px 32px rgba(222, 50, 16, 0.15);
 }
 
+/* Reset + typography */
 body {
+  font-family: var(--shopemaa-font-sans-serif);
   font-feature-settings: "cv03", "cv04", "cv11";
+  background: var(--shopemaa-bg);
+  color: var(--shopemaa-text);
+  margin: 0;
 }
 
-.carousel-container {
-  display: flex;
-  overflow-x: auto;
-  gap: 1rem;
-  scroll-behavior: smooth;
-  padding-bottom: 10px;
+/* Buttons */
+.btn-primary {
+  background-color: var(--shopemaa-brand);
+  border-color: var(--shopemaa-brand);
+  color: #fff;
 }
 
-.carousel-container::-webkit-scrollbar {
-  display: none; /* Hide scrollbar */
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #c42b0d;
+  border-color: #c42b0d;
 }
 
-/* optional */
-.card .card-body.palette-sticky {
-  position: sticky;
-  top: 0;
-  z-index: 1020;
+.btn-outline-primary {
+  border-color: var(--shopemaa-brand);
+  color: var(--shopemaa-brand);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: rgba(var(--shopemaa-brand-rgb), 0.08);
+  color: var(--shopemaa-brand);
+}
+
+/* Cards */
+.card {
+  border: 1px solid var(--shopemaa-border);
+  border-radius: var(--shopemaa-border-radius);
+  background: var(--shopemaa-bg-card);
+  box-shadow: var(--shopemaa-shadow-sm);
+}
+
+.card:hover {
+  box-shadow: var(--shopemaa-shadow-md);
+}
+
+/* Feature cards */
+.feature-card:hover,
+.feature-card:focus {
+  box-shadow: var(--shopemaa-shadow-lg) !important;
+  transform: translateY(-2px) scale(1.012);
+  border-color: rgba(var(--shopemaa-brand-rgb), 0.12) !important;
+}
+
+/* Text utilities */
+.text-brand {
+  color: var(--shopemaa-brand) !important;
+}
+
+.bg-brand {
+  background-color: var(--shopemaa-brand) !important;
+}
+
+.border-brand {
+  border-color: var(--shopemaa-brand) !important;
+}
+
+/* Table responsive (from your previous stylesheet) */
+.qrcentral-table {
+  @media (max-width: 768px) {
+    thead {
+      display: none;
+    }
+    tbody tr td {
+      display: flex;
+      gap: 12px;
+      padding: 0;
+      word-break: break-word;
+    }
+    tbody tr td > div {
+      padding: 10px;
+    }
+    tbody tr td:first-child {
+      display: none;
+    }
+    tbody tr td::before {
+      width: 150px;
+      min-width: 150px;
+      content: attr(data-header);
+      font-weight: 600;
+      display: block;
+      padding: 13px 15px 10px;
+      background-color: #f0f0f0;
+      white-space: break-spaces;
+      font-size: 12px;
+      text-align: left;
+      font-weight: normal;
+    }
+  }
 }

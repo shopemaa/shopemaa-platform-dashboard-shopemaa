@@ -1,4 +1,4 @@
-name: Stage - QrCode Dashboard Build Docker Image & Deploy
+name: Stage - Shopemaa Dashboard Build Docker Image & Deploy
 
 on:
   push:
@@ -39,15 +39,15 @@ jobs:
         run: |
           sh generate_clients.sh
 
-      - name: Docker build & push qrcode dashboard
+      - name: Docker build & push shopemaa dashboard
         uses: docker/build-push-action@v5
         with:
           context: .
           file: ./Dockerfile
           push: true
           tags: |
-            ghcr.io/${{ env.IMAGE_OWNER }}/shopemaa-platform-dashboard-qrcentraal:snapshot-latest
-            ghcr.io/${{ env.IMAGE_OWNER }}/shopemaa-platform-dashboard-qrcentraal:snapshot-${{ github.sha }}
+            ghcr.io/${{ env.IMAGE_OWNER }}/shopemaa-platform-dashboard-shopemaa:snapshot-latest
+            ghcr.io/${{ env.IMAGE_OWNER }}/shopemaa-platform-dashboard-shopemaa:snapshot-${{ github.sha }}
           build-args: |
             NEXT_CORE_API_URL=${{ env.CORE_API_URL }}
             NEXT_QRCODE_API_URL=${{ env.QRCODE_API_URL }}

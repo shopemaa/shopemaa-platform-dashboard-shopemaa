@@ -6,12 +6,12 @@ const Subheader = () => {
                     <div className="container-xl">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link" href="/dashboard/qr-codes/create">
+                                <a className="nav-link" href="/dashboard">
                                         <span className="nav-link-icon d-md-none d-lg-inline-block">
                                             <img src="/svgs/plus_squre.svg" alt="Create QR Code"/>
                                         </span>
                                     <span className="nav-link-title">
-                                          Create Project
+                                          Home
                                         </span>
                                 </a>
                             </li>
