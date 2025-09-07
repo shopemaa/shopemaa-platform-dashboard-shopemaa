@@ -1,0 +1,39 @@
+// Base class (no breakpoint)
+.d-table-header-group {
+    display: table-header-group !important;
+}
+
+// Small devices (576px and up)
+@media (min-width: 576px) {
+    .d-sm-table-header-group {
+        display: table-header-group !important;
+    }
+}
+
+// Medium devices (768px and up)
+@media (min-width: 768px) {
+    .d-md-table-header-group {
+        display: table-header-group !important;
+    }
+}
+
+// Large devices (992px and up)
+@media (min-width: 992px) {
+    .d-lg-table-header-group {
+        display: table-header-group !important;
+    }
+}
+
+// Extra large devices (1200px and up)
+@media (min-width: 1200px) {
+    .d-xl-table-header-group {
+        display: table-header-group !important;
+    }
+}
+
+// Extra extra large devices (1400px and up)
+@media (min-width: 1400px) {
+    .d-xxl-table-header-group {
+        display: table-header-group !important;
+    }
+}

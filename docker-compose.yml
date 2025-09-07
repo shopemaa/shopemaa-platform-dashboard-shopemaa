@@ -1,0 +1,5 @@
+services:
+  qrcentraal-dashboard:
+    image: ghcr.io/s4kibs4mi/shopemaa-platform-dashboard-qrcentraal:latest
+    ports:
+      - "3400:3000"

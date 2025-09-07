@@ -1,0 +1,41 @@
+.qrcentral-table {
+    @media (max-width: 768px) {
+        thead {
+            display: none;
+        }
+
+        tbody {
+            tr {
+                td {
+                    display: flex;
+                    gap: 12px;
+                    padding: 0;
+                    word-break: break-all;
+
+                    &>div {
+                        padding: 10px;
+                    }
+
+                    &:first-child {
+                        padding-left: 0;
+                        display: none;
+                    }
+
+                    &::before {
+                        width: 150px;
+                        min-width: 150px;
+                        content: attr(data-header);
+                        font-weight: bold;
+                        display: block;
+                        padding: 13px 15px 10px;
+                        background-color: #f0f0f0;
+                        white-space: break-spaces;
+                        font-size: 12px;
+                        text-align: left;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+}

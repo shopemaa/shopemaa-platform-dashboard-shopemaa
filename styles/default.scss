@@ -1,0 +1,32 @@
+// Custom styles
+@use './utility';
+@use './table';
+
+@import url('https://rsms.me/inter/inter.css');
+
+:root {
+  --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+}
+
+body {
+  font-feature-settings: "cv03", "cv04", "cv11";
+}
+
+.carousel-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* optional */
+.card .card-body.palette-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
