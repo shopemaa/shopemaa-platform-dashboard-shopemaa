@@ -243,8 +243,8 @@ export default function Index() {
     };
 
     const onRowClick = (product) => router.push(`/products/${product.id}`);
-    const onCreate = () => router.push("/products/new");
-    const onEdit = (product) => router.push(`/products/${product.id}/edit`);
+    const onCreate = () => router.push("/dashboard/products/create");
+    const onEdit = (product) => router.push(`/dashboard/products/${product.id}/edit`);
     const onDelete = async (productId) => {
         setRows((prev) => prev.filter((r) => r.id !== productId));
         setDomainRows((prev) => prev.filter((e) => e.product.id !== productId));
