@@ -42,6 +42,9 @@ RUN yarn build
 # Step 2. Production image, copy all the files and run next
 FROM base AS runner
 
+RUN apk update
+RUN apk add curl wget
+
 ARG NEXT_CORE_API_URL
 ENV NEXT_PUBLIC_CORE_API_URL=$NEXT_CORE_API_URL
 
