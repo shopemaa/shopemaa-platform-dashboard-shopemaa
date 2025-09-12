@@ -9,7 +9,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_OWNER: ${{ github.repository_owner }}
-  CORE_API_URL: 'https://core.shopemaa.com'
+  CORE_API_URL: 'https://accounts-api.shopemaa.com'
   QRCODE_API_URL: 'https://api.qrcentraal.com'
   SPACE_URL: 'https://cdn.qrcentraal.com'
 
