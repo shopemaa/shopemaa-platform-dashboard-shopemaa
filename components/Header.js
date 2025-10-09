@@ -104,7 +104,7 @@ const Header = () => {
                   }
                     <h1 className="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
                         <a href="/">
-                            <img src="/qrc/qrc-group2_2x.png" style={{height: '36px'}} alt="QrCentral Logo"
+                            <img src="/shopemaa/shopemaa_wordmark.png" style={{height: '36px'}} alt="Shopemaa Logo"
                                  className="navbar-brand-image"/>
                         </a>
                     </h1>

@@ -114,12 +114,12 @@ export default function Register() {
                             <div className="container-tight">
                                 <div className="text-center mb-4">
                                     <a href="/" className="navbar-brand navbar-brand-autodark">
-                                        <img src="/qrc/qrc-group2_2x.png" height="40" alt="QR Centraal Logo"/>
+                                        <img src="/shopemaa/shopemaa_wordmark.png" height="60" alt="Shopemaa Logo"/>
                                     </a>
                                 </div>
                                 <div className="card card-md shadow-lg border-0 rounded-3">
                                     <div className="card-body py-4 px-4 px-md-5">
-                                        <h2 className="h2 text-center mb-4 text-qrc">Get started with a free
+                                        <h2 className="h2 text-center mb-4 text-primary">Get started with a free
                                             account!</h2>
                                         <form autoComplete="off" noValidate
                                               onSubmit={e => {
@@ -216,10 +216,10 @@ export default function Register() {
                                                     id="termsCheck"
                                                 />
                                                 <label className="form-check-label ps-2" htmlFor="termsCheck">
-                                                    I accept the <a href="#" target="_blank" className="text-qrc">terms
+                                                    I accept the <a href="#" target="_blank" className="text-primary">terms
                                                     of service <IconExternalLink size={14}/></a> and <a href="#"
                                                                                                         target="_blank"
-                                                                                                        className="text-qrc">privacy
+                                                                                                        className="text-primary">privacy
                                                     policy <IconExternalLink size={14}/></a>
                                                 </label>
                                             </div>
@@ -228,8 +228,7 @@ export default function Register() {
                                                 <button
                                                     type="submit"
                                                     disabled={!agreedToTerms || disableSignupBtn}
-                                                    className="btn btn-qrc w-100 py-2 rounded-2 d-flex align-items-center justify-content-center"
-                                                >
+                                                    className="btn btn-primary w-100 py-2 rounded-2 d-flex align-items-center justify-content-center">
                                                     <span>Sign Up</span>
                                                     {disableSignupBtn && (
                                                         <span className="ms-2">
@@ -242,18 +241,18 @@ export default function Register() {
                                             </div>
                                         </form>
                                     </div>
-                                    <div className="hr-text">or</div>
-                                    <div className="card-body pt-2 pb-4 px-4 px-md-5">
-                                        <a href="#"
-                                           className="btn btn-outline-qrc w-100 d-flex align-items-center justify-content-center"
-                                           style={{minHeight: 44}}>
-                                            <IconBrandGoogle size={20}/>
-                                            <span className="ms-2">Signup with Google</span>
-                                        </a>
-                                    </div>
+                                    {/*<div className="hr-text">or</div>*/}
+                                    {/*<div className="card-body pt-2 pb-4 px-4 px-md-5">*/}
+                                    {/*    <a href="#"*/}
+                                    {/*       className="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center"*/}
+                                    {/*       style={{minHeight: 44}}>*/}
+                                    {/*        <IconBrandGoogle size={20}/>*/}
+                                    {/*        <span className="ms-2">Signup with Google</span>*/}
+                                    {/*    </a>*/}
+                                    {/*</div>*/}
                                 </div>
                                 <div className="text-center text-muted mt-4">
-                                    Already have an account? <a className="text-qrc" href="/login"
+                                    Already have an account? <a className="text-primary" href="/login"
                                                                 tabIndex="-1">Login</a>
                                 </div>
                             </div>
@@ -262,7 +261,7 @@ export default function Register() {
                             <img src="/static/illustrations/qrcentraal_illustration_1_t.png"
                                  style={{maxHeight: 420, objectFit: "contain"}}
                                  className="d-block mx-auto"
-                                 alt="QRCentraal illustration"
+                                 alt="Shopemaa illustration"
                             />
                         </div>
                     </div>

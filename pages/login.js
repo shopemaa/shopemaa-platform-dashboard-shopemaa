@@ -91,20 +91,19 @@ export default function Login({refresh}) {
                                 <div className="container-tight">
                                     <div className="text-center mb-4">
                                         <a href="/" className="navbar-brand navbar-brand-autodark">
-                                            <img src="/qrc/qrc-group2_2x.png" height="40" alt="QR Centraal Logo"/>
+                                            <img src="/shopemaa/shopemaa_wordmark.png" height="60" alt="Shopemaa Logo"/>
                                         </a>
                                     </div>
                                     <div className="card card-md shadow-lg rounded-3 border-0">
                                         <div className="card-body py-4 px-4 px-md-5">
-                                            <h2 className="h2 text-center mb-4 text-qrc">Sign in to QR Centraal</h2>
+                                            <h2 className="h2 text-center mb-4 text-primary">Sign in to Shopemaa</h2>
                                             <form
                                                 autoComplete="off"
                                                 noValidate
                                                 onSubmit={e => {
                                                     e.preventDefault();
                                                     onLogin();
-                                                }}
-                                            >
+                                                }}>
                                                 <div className="mb-3">
                                                     <label className="form-label">Email address</label>
                                                     <input
@@ -128,7 +127,7 @@ export default function Login({refresh}) {
                                                     <label className="form-label">
                                                         Password
                                                         <span className="form-label-description ms-2">
-                                                            <a href="/forgot-password" className="text-qrc small">
+                                                            <a href="/forgot-password" className="text-secondary small">
                                                                 Forgot password?
                                                             </a>
                                                         </span>
@@ -152,8 +151,7 @@ export default function Login({refresh}) {
                                                             onClick={() => setVisiblePassword(!visiblePassword)}
                                                             className="btn btn-link p-0 px-2 text-muted"
                                                             style={{background: "none", border: 0}}
-                                                            aria-label={visiblePassword ? "Hide password" : "Show password"}
-                                                        >
+                                                            aria-label={visiblePassword ? "Hide password" : "Show password"}>
                                                             {visiblePassword ? <IconEye size={20}/> :
                                                                 <IconEyeOff size={20}/>}
                                                         </button>
@@ -173,8 +171,7 @@ export default function Login({refresh}) {
                                                     <button
                                                         type="submit"
                                                         disabled={disableLoginBtn}
-                                                        className="btn btn-qrc w-100 py-2 rounded-2 d-flex align-items-center justify-content-center"
-                                                    >
+                                                        className="btn btn-primary w-100 py-2 rounded-2 d-flex align-items-center justify-content-center">
                                                         <span>Login</span>
                                                         {disableLoginBtn && (
                                                             <span className="ms-2">
@@ -188,15 +185,15 @@ export default function Login({refresh}) {
                                             </form>
                                         </div>
 
-                                        <div className="hr-text">or</div>
-                                        <div className="card-body pt-2 pb-4 px-4 px-md-5">
-                                            <a href="#"
-                                               className="btn btn-outline-qrc w-100 d-flex align-items-center justify-content-center"
-                                               style={{minHeight: 44}}>
-                                                <IconBrandGoogle size={20}/>
-                                                <span className="ms-2">Sign in with Google</span>
-                                            </a>
-                                        </div>
+                                        {/*<div className="hr-text">or</div>*/}
+                                        {/*<div className="card-body pt-2 pb-4 px-4 px-md-5">*/}
+                                        {/*    <a href="#"*/}
+                                        {/*       className="btn btn-outline-qrc w-100 d-flex align-items-center justify-content-center"*/}
+                                        {/*       style={{minHeight: 44}}>*/}
+                                        {/*        <IconBrandGoogle size={20}/>*/}
+                                        {/*        <span className="ms-2">Sign in with Google</span>*/}
+                                        {/*    </a>*/}
+                                        {/*</div>*/}
                                     </div>
                                     <div className="text-center text-muted mt-4">
                                         Don&apos;t have an account yet?{" "}
@@ -211,7 +208,7 @@ export default function Login({refresh}) {
                                     src="/static/illustrations/qrcentraal_illustration_1_t.png"
                                     style={{maxHeight: 420, objectFit: "contain"}}
                                     className="d-block mx-auto"
-                                    alt="QRCentraal illustration"
+                                    alt="Shopemaa illustration"
                                 />
                             </div>
                         </div>

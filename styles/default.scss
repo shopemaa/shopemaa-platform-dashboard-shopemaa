@@ -3,29 +3,45 @@
 /* Import font */
 @import url('https://rsms.me/inter/inter.css');
 
-/* Theme variables */
+/* =========
+   THEME TOKENS
+   ========= */
 :root {
+  /* Font */
   --shopemaa-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont,
   'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 
-  --shopemaa-brand: #de3210;
-  --shopemaa-brand-rgb: 222, 50, 16;
+  /* Brand (Primary) & Accent */
+  --shopemaa-brand: #0A3A7D; /* Navy (primary) */
+  --shopemaa-brand-rgb: 10, 58, 125;
+  --shopemaa-accent: #F26C21; /* Orange (accent) */
+  --shopemaa-accent-rgb: 242, 108, 33;
 
+  /* Backgrounds */
   --shopemaa-bg: #f7f8fa;
   --shopemaa-bg-card: #ffffff;
+  --shopemaa-bg-accent: #e5efe7; /* Soft green accent background */
 
+  /* Text & borders */
   --shopemaa-text: #212529;
   --shopemaa-text-muted: #6c757d;
-
   --shopemaa-border: #e5e7eb;
   --shopemaa-border-radius: 0.75rem;
 
+  /* Elevation */
   --shopemaa-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
   --shopemaa-shadow-md: 0 3px 18px rgba(0, 0, 0, 0.12);
-  --shopemaa-shadow-lg: 0 8px 32px rgba(222, 50, 16, 0.15);
+  --shopemaa-shadow-lg: 0 8px 32px rgba(10, 58, 125, 0.15); /* tinted with primary */
+
+  /* Back-compat (Tabler-style aliases you shared) */
+  --tblr-primary: var(--shopemaa-brand);
+  --tblr-accent: var(--shopemaa-accent);
+  --tblr-bg-accent: var(--shopemaa-bg-accent);
 }
 
-/* Reset + typography */
+/* =========
+   RESET + TYPOGRAPHY
+   ========= */
 body {
   font-family: var(--shopemaa-font-sans-serif);
   font-feature-settings: "cv03", "cv04", "cv11";
@@ -34,7 +50,90 @@ body {
   margin: 0;
 }
 
-/* Buttons */
+/* =========
+   UTILITIES (from your values)
+   ========= */
+.bg-accent {
+  background: var(--shopemaa-bg-accent) !important;
+}
+
+.text-brand {
+  color: var(--shopemaa-brand) !important;
+}
+
+.text-accent {
+  color: var(--shopemaa-accent) !important;
+}
+
+.section-spacing {
+  padding-top: 4.5rem !important;
+  padding-bottom: 4.5rem !important;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--shopemaa-brand);
+  margin-bottom: 2.5rem;
+  letter-spacing: -1.5px;
+}
+
+.shadow-soft {
+  box-shadow: 0 2px 24px 0 rgba(10, 58, 125, 0.06) !important;
+}
+
+.card-modern {
+  border: none !important;
+  border-radius: 1.5rem !important;
+  background: #fff !important;
+}
+
+/* CTA buttons (solid & outline) */
+.cta-btn {
+  border-radius: 9999px !important;
+  font-weight: 700 !important;
+  box-shadow: 0 3px 16px 0 rgba(10, 58, 125, 0.11);
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  background: var(--shopemaa-brand) !important;
+  border-color: var(--shopemaa-brand) !important;
+  color: #fff !important;
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+  background: #082f65 !important; /* ~10-15% darker */
+  border-color: #082f65 !important;
+}
+
+.cta-btn-outline {
+  border-radius: 9999px !important;
+  font-weight: 700 !important;
+  border: 2px solid var(--shopemaa-brand) !important;
+  color: var(--shopemaa-brand) !important;
+  background: #fff !important;
+}
+
+.cta-btn-outline:hover,
+.cta-btn-outline:focus {
+  background: rgba(var(--shopemaa-brand-rgb), 0.06) !important;
+}
+
+/* Hero text utilities */
+.hero-lead {
+  color: var(--shopemaa-brand);
+  opacity: 0.82;
+}
+
+@media (min-width: 992px) {
+  .hero-side-img {
+    max-width: 400px;
+  }
+}
+
+/* =========
+   BUTTONS (bootstrap-like classes)
+   ========= */
 .btn-primary {
   background-color: var(--shopemaa-brand);
   border-color: var(--shopemaa-brand);
@@ -43,13 +142,14 @@ body {
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #c42b0d;
-  border-color: #c42b0d;
+  background-color: #082f65; /* darker primary */
+  border-color: #082f65;
 }
 
 .btn-outline-primary {
   border-color: var(--shopemaa-brand);
   color: var(--shopemaa-brand);
+  background: transparent;
 }
 
 .btn-outline-primary:hover,
@@ -58,7 +158,34 @@ body {
   color: var(--shopemaa-brand);
 }
 
-/* Cards */
+/* Accent variants (optional, if you use them) */
+.btn-accent {
+  background-color: var(--shopemaa-accent);
+  border-color: var(--shopemaa-accent);
+  color: #fff;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background-color: #d65e1d; /* darker accent */
+  border-color: #d65e1d;
+}
+
+.btn-outline-accent {
+  border-color: var(--shopemaa-accent);
+  color: var(--shopemaa-accent);
+  background: transparent;
+}
+
+.btn-outline-accent:hover,
+.btn-outline-accent:focus {
+  background-color: rgba(var(--shopemaa-accent-rgb), 0.08);
+  color: var(--shopemaa-accent);
+}
+
+/* =========
+   CARDS
+   ========= */
 .card {
   border: 1px solid var(--shopemaa-border);
   border-radius: var(--shopemaa-border-radius);
@@ -78,11 +205,9 @@ body {
   border-color: rgba(var(--shopemaa-brand-rgb), 0.12) !important;
 }
 
-/* Text utilities */
-.text-brand {
-  color: var(--shopemaa-brand) !important;
-}
-
+/* =========
+   BRAND UTILS
+   ========= */
 .bg-brand {
   background-color: var(--shopemaa-brand) !important;
 }
@@ -91,36 +216,45 @@ body {
   border-color: var(--shopemaa-brand) !important;
 }
 
-/* Table responsive (from your previous stylesheet) */
-.qrcentral-table {
-  @media (max-width: 768px) {
-    thead {
-      display: none;
-    }
-    tbody tr td {
-      display: flex;
-      gap: 12px;
-      padding: 0;
-      word-break: break-word;
-    }
-    tbody tr td > div {
-      padding: 10px;
-    }
-    tbody tr td:first-child {
-      display: none;
-    }
-    tbody tr td::before {
-      width: 150px;
-      min-width: 150px;
-      content: attr(data-header);
-      font-weight: 600;
-      display: block;
-      padding: 13px 15px 10px;
-      background-color: #f0f0f0;
-      white-space: break-spaces;
-      font-size: 12px;
-      text-align: left;
-      font-weight: normal;
-    }
+/* =========
+   RESPONSIVE TABLE (fixed invalid nested @media)
+   ========= */
+.qrcentral-table thead {
+}
+
+.qrcentral-table tbody tr td {
+}
+
+@media (max-width: 768px) {
+  .qrcentral-table thead {
+    display: none;
+  }
+
+  .qrcentral-table tbody tr td {
+    display: flex;
+    gap: 12px;
+    padding: 0;
+    word-break: break-word;
+  }
+
+  .qrcentral-table tbody tr td > div {
+    padding: 10px;
+  }
+
+  .qrcentral-table tbody tr td:first-child {
+    display: none;
+  }
+
+  .qrcentral-table tbody tr td::before {
+    width: 150px;
+    min-width: 150px;
+    content: attr(data-header);
+    display: block;
+    padding: 13px 15px 10px;
+    background-color: #f0f0f0;
+    white-space: break-spaces;
+    font-size: 12px;
+    text-align: left;
+    font-weight: 600;
   }
 }

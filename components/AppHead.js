@@ -5,7 +5,7 @@ const AppHead = ({
                      title,
                      description,
                      bannerImage,
-                     faviconUrl = '/qrc/qrc-favicon.png',
+                     faviconUrl = '/shopemaa/logo.png',
                      contentUrl,
                      lang
                  }) => {
@@ -28,9 +28,9 @@ const AppHead = ({
             )}
             {!title && (
                 <>
-                    <title>QrCentraal - Scan Smarter, Share Greener</title>
-                    <meta property="og:title" content="QrCentraal - Scan Smarter, Share Greener"/>
-                    <meta property="twitter:title" content="QrCentraal - Scan Smarter, Share Greener"/>
+                    <title>Shopemaa - Connecting the dots in commerce</title>
+                    <meta property="og:title" content="Shopemaa - Connecting the dots in commerce"/>
+                    <meta property="twitter:title" content="Shopemaa - Connecting the dots in commerce"/>
                 </>
             )}
 

@@ -18,7 +18,7 @@ export const getServerSideProps = async (ctx) => {
     // }
     return {
         redirect: {
-            destination: '/dashboard/qr-codes/create',
+            destination: '/dashboard',
             permanent: false
         }
     }

@@ -15,16 +15,6 @@ const Subheader = () => {
                                         </span>
                                 </a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/dashboard/qr-codes">
-                                        <span className="nav-link-icon d-md-none d-lg-inline-block">
-                                            <img src="/svgs/qrcode.svg" alt="List QR Codes"/>
-                                        </span>
-                                    <span className="nav-link-title">
-                                          My Projects
-                                        </span>
-                                </a>
-                            </li>
                         </ul>
 
                         {/*<div className="my-2 my-md-0 flex-grow-1 flex-md-grow-0 order-first order-md-last">*/}
