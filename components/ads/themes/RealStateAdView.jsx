@@ -96,7 +96,7 @@ const RealStateAdView = ({
                                 {campaign.campaign_action !== 'NONE' && (
                                     <button
                                         onClick={() => handleCampaignAction()}
-                                        className="btn btn-qrc text-white shadow"
+                                        className="btn btn-primary text-white shadow"
                                         role="button">
                                         {campaign.campaign_action_btn_label ? campaign.campaign_action_btn_label : campaign.campaign_action}
                                     </button>

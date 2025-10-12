@@ -45,7 +45,7 @@ export default function RestaurantDashboard({project}) {
                         </li>
 
                         <li className="breadcrumb-item">
-                            <a href={`/dashboard/restaurants/${project.id}`} className="text-qrc"
+                            <a href={`/dashboard/restaurants/${project.id}`} className="text-primary"
                                style={{textDecoration: "none"}}>
                                 <span style={{fontWeight: 500}}>Dashboard</span>
                             </a>
@@ -99,7 +99,7 @@ export default function RestaurantDashboard({project}) {
                                     + New Order
                                 </a>
                                 <a href={`/dashboard/restaurants/${project.id}/menu-items`}
-                                   className="btn flex-grow-1 text-qrc border-black"
+                                   className="btn flex-grow-1 text-primary border-black"
                                    style={{
                                        color: "#fff",
                                        fontWeight: 500,
@@ -111,7 +111,7 @@ export default function RestaurantDashboard({project}) {
                                 </a>
 
                                 <a href={`/dashboard/restaurants/${project.id}/tables`}
-                                   className="btn flex-grow-1 text-qrc border-black"
+                                   className="btn flex-grow-1 text-primary border-black"
                                    style={{
                                        color: "#fff",
                                        fontWeight: 500,
@@ -122,7 +122,7 @@ export default function RestaurantDashboard({project}) {
                                     Manage Tables
                                 </a>
 
-                                <button className="btn flex-grow-1 text-qrc border-black"
+                                <button className="btn flex-grow-1 text-primary border-black"
                                         style={{
                                             color: "#fff",
                                             fontWeight: 500,
@@ -134,7 +134,7 @@ export default function RestaurantDashboard({project}) {
                                 </button>
 
                                 <a href={`/dashboard/restaurants/${project.id}/reports`}
-                                   className="btn flex-grow-1 text-qrc border-black"
+                                   className="btn flex-grow-1 text-primary border-black"
                                    style={{
                                        color: "#fff",
                                        fontWeight: 500,
@@ -146,7 +146,7 @@ export default function RestaurantDashboard({project}) {
                                 </a>
 
                                 <a href={`/dashboard/qr-codes/${project.id}/configure`}
-                                   className="btn flex-grow-1 text-qrc border-black"
+                                   className="btn flex-grow-1 text-primary border-black"
                                    style={{
                                        color: "#fff",
                                        fontWeight: 500,

@@ -63,7 +63,7 @@ const SubscriptionEndedView = ({hasUsableSubscriptionPlan}) => {
                                 </ul>
 
                                 <div className="my-4">
-                                    <a href="/dashboard/billing/subscription-list" className="btn btn-qrc w-100">
+                                    <a href="/dashboard/billing/subscription-list" className="btn btn-primary w-100">
                                         Choose your plan
                                     </a>
                                 </div>

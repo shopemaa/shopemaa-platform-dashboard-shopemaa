@@ -81,7 +81,7 @@ const SubscriptionPackageItem = ({subscription, isActive, showCheckoutCallback, 
         <div className="col-12">
             <div className="card card-md">
                 <div className="card-body text-center">
-                    <div className="text-uppercase text-qrc font-weight-medium">{subscription.name}</div>
+                    <div className="text-uppercase text-primary font-weight-medium">{subscription.name}</div>
                     <div className="h1 mt-2">
                         {formatAmount(subscription.price_in_cents, subscription.price_in_currency, subscription.billing_cycle)}
                     </div>
@@ -111,7 +111,7 @@ const SubscriptionPackageItem = ({subscription, isActive, showCheckoutCallback, 
                             <button onClick={() => {
                                 showCheckoutCallback(subscription)
                             }} disabled={isActive}
-                                    className="btn btn-qrc w-100">
+                                    className="btn btn-primary w-100">
                                 {isActive ? 'Current Plan' : (subscription.price_in_cents < 0 ? 'Contact Us' : 'Choose Plan')}
                             </button>
                         </div>
@@ -121,7 +121,7 @@ const SubscriptionPackageItem = ({subscription, isActive, showCheckoutCallback, 
                         <div className="text-center mt-4">
                             <button onClick={() => {
                                 changePlanCallback()
-                            }} className="btn btn-qrc w-100">
+                            }} className="btn btn-primary w-100">
                                 {isActive ? 'Change Plan' : (subscription.price_in_cents < 0 ? 'Contact Us' : 'Choose Plan')}
                             </button>
                         </div>

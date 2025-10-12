@@ -28,7 +28,7 @@ const pageInternalServerError = () => {
                             In the meantime, maybe try refreshing the page or coming back in a bit.
                         </p>
                         <div className="empty-action">
-                            <Link href={callbackUrl} className="btn btn-qrc">
+                            <Link href={callbackUrl} className="btn btn-primary">
                                 <IconArrowRight/>&nbsp;
                                 Retry
                             </Link>

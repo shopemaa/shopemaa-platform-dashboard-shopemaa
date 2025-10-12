@@ -197,7 +197,7 @@ export default function Login({refresh}) {
                                     </div>
                                     <div className="text-center text-muted mt-4">
                                         Don&apos;t have an account yet?{" "}
-                                        <a className="text-qrc" href="/register">
+                                        <a className="text-primary" href="/register">
                                             Sign up
                                         </a>
                                     </div>

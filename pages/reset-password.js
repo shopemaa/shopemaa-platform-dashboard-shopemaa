@@ -68,7 +68,7 @@ export default function ResetPassword() {
                                 </div>
                                 <div className="card card-md shadow-lg border-0 rounded-3">
                                     <div className="card-body py-4 px-4 px-md-5">
-                                        <h2 className="h2 text-center mb-4 text-qrc">Create New Password</h2>
+                                        <h2 className="h2 text-center mb-4 text-primary">Create New Password</h2>
                                         <form onSubmit={handleSubmit} autoComplete="off" noValidate>
                                             <div className="mb-3">
                                                 <label className="form-label">Email address</label>
@@ -126,7 +126,7 @@ export default function ResetPassword() {
                                             <div className="form-footer mt-2">
                                                 <button
                                                     type="submit"
-                                                    className="btn btn-qrc w-100"
+                                                    className="btn btn-primary w-100"
                                                     disabled={submitting}
                                                 >
                                                     {submitting ? (
@@ -145,7 +145,7 @@ export default function ResetPassword() {
                                 </div>
                                 <div className="text-center text-muted mt-4">
                                     Remember password?{" "}
-                                    <a className="text-qrc" href="/login" tabIndex="-1">
+                                    <a className="text-primary" href="/login" tabIndex="-1">
                                         Login
                                     </a>
                                 </div>

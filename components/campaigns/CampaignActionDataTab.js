@@ -79,7 +79,7 @@ const CampaignActionDataTab = ({project}) => {
               <span className="h3 mb-0" style={{color: "#214a3b", fontWeight: 700, paddingLeft: 6}}>
                 {actionEventTitle}
               </span>
-                            <button className="btn btn-sm btn-qrc ms-3" onClick={onExport}>
+                            <button className="btn btn-sm btn-primary ms-3" onClick={onExport}>
                                 Export
                             </button>
                             <div className="ms-auto d-flex align-items-center">

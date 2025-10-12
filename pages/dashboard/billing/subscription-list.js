@@ -196,7 +196,7 @@ export default function SubscriptionList({subscriptions, countries, activeSubscr
                                     onClick={() => {
                                         handleOnSubscribe()
                                     }}
-                                    type="button" className="btn btn-qrc w-66" data-bs-dismiss="modal">
+                                    type="button" className="btn btn-primary w-66" data-bs-dismiss="modal">
                                     Subscribe
                                     {disableSubscribeBtn && (
                                         <>

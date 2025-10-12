@@ -62,9 +62,9 @@ export default function Verify({token, email}) {
             return (
                 <>
                     <div className="text-center mb-3">
-                        <div className="spinner-border text-qrc" style={{width: 48, height: 48}} role="status"/>
+                        <div className="spinner-border text-primary" style={{width: 48, height: 48}} role="status"/>
                     </div>
-                    <p className="text-center text-qrc h4">Verifying your account…</p>
+                    <p className="text-center text-primary h4">Verifying your account…</p>
                     <p className="text-center text-muted small mb-0">Hang tight, we're confirming your details.</p>
                 </>
             );
@@ -92,7 +92,7 @@ export default function Verify({token, email}) {
                     <div className="form-footer">
                         <button
                             onClick={onVerify}
-                            className="btn btn-qrc w-100"
+                            className="btn btn-primaryw-100"
                             disabled={status === "verifying"}
                         >
                             {status === "verifying" ? "Verifying…" : hasTried ? "Retry Verification" : "Verify Account"}
@@ -106,7 +106,7 @@ export default function Verify({token, email}) {
             <div className="form-footer">
                 <button
                     onClick={onVerify}
-                    className="btn btn-qrc w-100"
+                    className="btn btn-primaryw-100"
                     disabled={status === "verifying"}
                 >
                     Verify Account

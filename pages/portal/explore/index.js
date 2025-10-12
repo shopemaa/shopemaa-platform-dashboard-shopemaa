@@ -47,7 +47,7 @@ export default function DemoIndex({blocks, title, selectedTheme}) {
 
             <div className="row justify-content-center align-items-center text-center pt-2 pb-2">
                 <div className="col-auto">
-                    <label htmlFor="explore-select" className="mb-0 text-qrc">Explore as</label>
+                    <label htmlFor="explore-select" className="mb-0 text-primary">Explore as</label>
                 </div>
                 <div className="col-auto mx-2">
                     <BaseSelect

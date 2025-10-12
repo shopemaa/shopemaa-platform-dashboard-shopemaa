@@ -183,7 +183,7 @@ export default function QrCodeCreate() {
                                                     }}
                                                 />
                                             </div>
-                                            <div className={'h3 text-qrc'}>
+                                            <div className={'h3 text-primary'}>
                                                 {feature.name}
                                             </div>
                                             <div>

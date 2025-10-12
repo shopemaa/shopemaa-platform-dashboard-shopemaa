@@ -142,7 +142,7 @@ const Header = () => {
                                          padding: '5px',
                                      }}/>
                                 <div className="d-none d-xl-block ps-2">
-                                    <div className={'text-qrc'}>{fullName}</div>
+                                    <div className={'text-primary'}>{fullName}</div>
                                     <span className={'text-secondary'}>{orgName}</span>
                                 </div>
                             </a>

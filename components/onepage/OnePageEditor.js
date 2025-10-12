@@ -153,7 +153,7 @@ const OnePageEditor = ({project}) => {
                                                 <span className={'h2 mb-0'}>{project.name}</span>&nbsp;&nbsp;
                                                 <button onClick={() => {
                                                     setShowMagicPopup(true)
-                                                }} className={'btn btn-sm btn-qrc pe-3 ps-3'}>AI Generator
+                                                }} className={'btn btn-sm btn-primary pe-3 ps-3'}>AI Generator
                                                 </button>
                                                 &nbsp;&nbsp;
                                                 <button onClick={() => {

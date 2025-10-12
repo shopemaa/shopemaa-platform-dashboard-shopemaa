@@ -258,7 +258,7 @@ function MenuItemList({project}) {
                         </li>
 
                         <li className="breadcrumb-item">
-                            <a href={`/dashboard/restaurants/${project.id}`} className="text-qrc"
+                            <a href={`/dashboard/restaurants/${project.id}`} className="text-primary"
                                style={{textDecoration: "none"}}>
                                 <span style={{fontWeight: 500}}>Dashboard</span>
                             </a>
