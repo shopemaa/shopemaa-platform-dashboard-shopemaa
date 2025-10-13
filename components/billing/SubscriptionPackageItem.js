@@ -95,15 +95,15 @@ const SubscriptionPackageItem = ({subscription, isActive, showCheckoutCallback, 
                         {Object.keys(featureList()).map((key) => {
                             const value = formattedFeature(key, featureList()[key]);
                             return value ? (
-                                <li key={key} className="bg-teal-lt p-1 mb-1">
+                                <li key={key} className="bg-primary-lt p-1 mb-1">
                                     {value}
                                 </li>
                             ) : '';
                         })}
 
-                        <li className={"bg-teal-lt p-1 mb-1"}>Variety of QR types</li>
-                        <li className={"bg-teal-lt p-1 mb-1"}>Unlimited modifications</li>
-                        <li className={"bg-teal-lt p-1 mb-1"}>Multiple QR code download formats</li>
+                        <li className={"bg-primary-lt p-1 mb-1"}>Variety of QR types</li>
+                        <li className={"bg-primary-lt p-1 mb-1"}>Unlimited modifications</li>
+                        <li className={"bg-primary-lt p-1 mb-1"}>Multiple QR code download formats</li>
                     </ul>
 
                     {showCheckoutCallback && (
