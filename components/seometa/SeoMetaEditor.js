@@ -157,7 +157,7 @@ export default function SeoMetaEditor({meta, projectId}) {
                 onClick={() => {
                     onSaveMetadata()
                 }}
-                disabled={isUpdating} className={'btn btn-qrc'}>
+                disabled={isUpdating} className={'btn btn-primary'}>
                 Save
                 &nbsp;
                 {isUpdating && (

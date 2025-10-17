@@ -120,7 +120,7 @@ const OrganizationList = ({}) => {
                                         <button
                                             disabled={disableOrgCreateBtn}
                                             onClick={onCreateOrganization}
-                                            className="btn btn-qrc">
+                                            className="btn btn-primary">
                                             Create
                                             {disableOrgCreateBtn && (
                                                 <div className="spinner-border spinner-border-sm text-white"
@@ -142,7 +142,7 @@ const OrganizationList = ({}) => {
 
                                         <button
                                             onClick={() => setShowOrganizationCreateModal(true)}
-                                            className={'btn btn-qrc'}>
+                                            className={'btn btn-primary'}>
                                             Add Organization
                                         </button>
                                     </div>
@@ -169,7 +169,7 @@ const OrganizationList = ({}) => {
                                                                 </div>
                                                             </div>
                                                             <div className="col-auto">
-                                                                <a class={'btn btn-qrc'}
+                                                                <a class={'btn btn-primary'}
                                                                    href={'#'}
                                                                    onClick={event => {
                                                                        event.preventDefault()
@@ -179,7 +179,7 @@ const OrganizationList = ({}) => {
                                                                 </a>
                                                             </div>
                                                             <div className="col-auto">
-                                                                <a class={'btn btn-qrc'}
+                                                                <a class={'btn btn-primary'}
                                                                    href={`/dashboard/organizations/${organization.id}/manage`}>
                                                                     Manage
                                                                 </a>

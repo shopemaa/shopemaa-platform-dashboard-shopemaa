@@ -73,7 +73,7 @@ const MySubscriptionView = ({activeSubscription, payments: allPayments = []}) =>
                             <div className="row align-items-center">
                                 <div className="col-md-6 col-12 mb-3 mb-md-0">
                                     <h2 className="h2">{subscriptionPlan?.name}</h2>
-                                    <p className="m-0 text-qrc pb-2">
+                                    <p className="m-0 text-primary pb-2">
                                         You’re on the <strong>{subscriptionPlan?.name}</strong> plan.<br/>
                                         Next renewal: <b>{activeSubscription.end_date}</b>.
                                     </p>
@@ -90,10 +90,10 @@ const MySubscriptionView = ({activeSubscription, payments: allPayments = []}) =>
                             </div>
                         ) : (
                             <div className="text-center">
-                                <p className="m-0 text-qrc pb-3">
+                                <p className="m-0 text-primary pb-3">
                                     You do not have an active subscription plan.
                                 </p>
-                                <button onClick={onChangePlan} className='btn btn-qrc'>
+                                <button onClick={onChangePlan} className='btn btn-primary'>
                                     Choose Plan
                                 </button>
                             </div>
@@ -150,7 +150,7 @@ const MySubscriptionView = ({activeSubscription, payments: allPayments = []}) =>
                                             {payment.payment_status === 'Pending' ? (
                                                 <button
                                                     onClick={() => initiatePayment(payment)}
-                                                    className='btn btn-sm btn-qrc px-3'>
+                                                    className='btn btn-sm btn-primary px-3'>
                                                     Pay Now
                                                 </button>
                                             ) : (

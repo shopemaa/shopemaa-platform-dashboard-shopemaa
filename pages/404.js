@@ -18,7 +18,7 @@ const pageNotFound = () => {
                             fix.
                         </p>
                         <div className="empty-action">
-                            <Link href="/" className="btn btn-qrc">
+                            <Link href="/" className="btn btn-primary">
                                 <IconArrowLeft/>&nbsp;
                                 Take me home
                             </Link>

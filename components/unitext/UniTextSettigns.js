@@ -145,7 +145,7 @@ export default function UniTextSettigns({project, uniTextType}) {
                         </li>
 
                         <li className="breadcrumb-item">
-                            <a href={`/dashboard/uni-texts/${project.id}`} className="text-qrc"
+                            <a href={`/dashboard/uni-texts/${project.id}`} className="text-primary"
                                style={{textDecoration: "none"}}>
                                 <span style={{fontWeight: 500}}>UniText</span>
                             </a>
@@ -223,7 +223,7 @@ export default function UniTextSettigns({project, uniTextType}) {
                                         <button
                                             disabled={disableUpdateBtn}
                                             onClick={onUpsertUniTextSettings}
-                                            className="btn btn-qrc">
+                                            className="btn btn-primary">
                                             Save Changes &nbsp;
                                             {disableUpdateBtn && (
                                                 <div

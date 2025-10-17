@@ -345,7 +345,7 @@ const PageBuilder = forwardRef(function PageBuilder(
                                         </button>
                                         <button
                                             disabled={disableSaveBtn}
-                                            className="btn btn-qrc rounded-3 ps-3 pe-3"
+                                            className="btn btn-primary rounded-3 ps-3 pe-3"
                                             onClick={() =>
                                                 typeof onSave === "function" && onSave(tree, setDisableSaveBtn)
                                             }>

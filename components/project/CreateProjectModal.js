@@ -121,7 +121,7 @@ const CreateProjectModal = ({
                             </button>
                             <button
                                 disabled={disableCreateBtn || !projectName.trim()}
-                                className="btn btn-qrc"
+                                className="btn btn-primary"
                                 onClick={onCreateProject}
                                 type="button">
                                 {disableCreateBtn ? (

@@ -142,7 +142,7 @@ export default function ContentSettings({ project }) {
                       <button
                         disabled={disableUpdateBtn || !title || !contentFile}
                         onClick={onUpsertContent}
-                        className="btn btn-qrc"
+                        className="btn btn-primary"
                       >
                         Continue
                         {disableUpdateBtn && (

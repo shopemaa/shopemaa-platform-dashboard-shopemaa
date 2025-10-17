@@ -150,7 +150,7 @@ const QrCodeConfigure = ({project}) => {
                         <li className="breadcrumb-item active" aria-current="page"><span
                             style={{fontWeight: 500}}>{project.name}</span></li>
                         <li className="breadcrumb-item">
-                            <a href={`/${mapProjectTypeToResourceUrl(project.type)}/${project.id}`} className="text-qrc"
+                            <a href={`/${mapProjectTypeToResourceUrl(project.type)}/${project.id}`} className="text-primary"
                                style={{textDecoration: "none"}}>
                                 <span style={{fontWeight: 500}}>{project.type}</span>
                             </a>
@@ -291,7 +291,7 @@ const QrCodeConfigure = ({project}) => {
                                     <button
                                         disabled={disableUpdateBtn}
                                         onClick={onConfigure}
-                                        className="btn btn-qrc px-4 py-2 flex-grow-1"
+                                        className="btn btn-primary px-4 py-2 flex-grow-1"
                                     >
                                         Configure
                                         {disableUpdateBtn && (
@@ -314,7 +314,7 @@ const QrCodeConfigure = ({project}) => {
                                 {!generatedQrCodeUrl ? (
                                     <div className="w-100 d-flex flex-column align-items-center justify-content-center"
                                          style={{height: 300}}>
-                                        <div className="spinner-border text-qrc mb-3" role="status"></div>
+                                        <div className="spinner-border text-primary mb-3" role="status"></div>
                                         <div className="text-muted">Generating QR code...</div>
                                     </div>
                                 ) : (
@@ -331,14 +331,14 @@ const QrCodeConfigure = ({project}) => {
                                     <button
                                         disabled={disableUpdateBtn || !generatedQrCodeUrl}
                                         onClick={() => window.open(generatedQrCodeUrl, '_blank')}
-                                        className="btn btn-qrc px-4 py-2"
+                                        className="btn btn-primary px-4 py-2"
                                     >
                                         Download PNG
                                     </button>
                                     <button
                                         disabled={disableUpdateBtn || !generatedQrCodeAsSvgUrl}
                                         onClick={() => window.open(generatedQrCodeAsSvgUrl, '_blank')}
-                                        className="btn btn-qrc px-4 py-2"
+                                        className="btn btn-primary px-4 py-2"
                                     >
                                         Download SVG
                                     </button>

@@ -113,7 +113,7 @@ const MagicModal = ({
                             <button
                                 disabled={disableMagicBtn}
                                 onClick={handleMagic}
-                                className="btn btn-qrc col-6"
+                                className="btn btn-primary col-6"
                                 type="button"
                             >
                                 {disableMagicBtn ? (

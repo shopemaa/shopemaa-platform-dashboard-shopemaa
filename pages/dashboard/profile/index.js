@@ -288,7 +288,7 @@ export default function Profile() {
                                                 <div className="d-flex flex-wrap gap-2 mt-4">
                                                     <button
                                                         type="submit"
-                                                        className="btn btn-qrc px-4 py-2"
+                                                        className="btn btn-primary px-4 py-2"
                                                         disabled={isUpdating || !hasDataChanges}
                                                     >
                                                         {isUpdating ? (

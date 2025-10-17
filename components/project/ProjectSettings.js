@@ -169,7 +169,7 @@ const ProjectSettings = ({project, organizationId}) => {
                         </li>
                         <li className="breadcrumb-item">
                             <a href={`/${mapProjectTypeToResourceUrl(project.type)}/${project.id}`}
-                               className="text-qrc"
+                               className="text-primary"
                                style={{textDecoration: "none"}}>
                                 <span style={{fontWeight: 500}}>{project.type}</span>
                             </a>
@@ -236,7 +236,7 @@ const ProjectSettings = ({project, organizationId}) => {
                                         <button
                                             disabled={disableUpdateBtn}
                                             onClick={onProjectUpdate}
-                                            className="btn btn-qrc col-12 col-md-4 mb-3 me-5">
+                                            className="btn btn-primary col-12 col-md-4 mb-3 me-5">
                                             Save Changes
                                             {disableUpdateBtn && (
                                                 <>
@@ -288,7 +288,7 @@ const ProjectSettings = ({project, organizationId}) => {
                                             </div>
                                         )}
                                         {showSlugMessage && (
-                                            <small className="form-hint text-qrc">
+                                            <small className="form-hint text-primary">
                                                 Slug "{projectData.project_slug}"
                                                 is {isSlugAvailable ? "available" : "unavailable"}
                                             </small>
@@ -304,7 +304,7 @@ const ProjectSettings = ({project, organizationId}) => {
                                                 <>
                                                     &nbsp;&nbsp;&nbsp;
                                                     <div
-                                                        className="spinner-border spinner-border-sm text-qrc"
+                                                        className="spinner-border spinner-border-sm text-primary"
                                                         role="status"
                                                     ></div>
                                                 </>
@@ -314,7 +314,7 @@ const ProjectSettings = ({project, organizationId}) => {
                                         <button
                                             disabled={!isSlugAvailable || disableUpdateBtn}
                                             onClick={onSlugClaim}
-                                            className="btn btn-qrc col-auto mb-3 me-5">
+                                            className="btn btn-primary col-auto mb-3 me-5">
                                             Claim Slug
                                             {disableUpdateBtn && (
                                                 <>

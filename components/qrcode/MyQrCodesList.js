@@ -160,7 +160,7 @@ const MyQrCodesList = ({result}) => {
                                                                     </Link>
 
                                                                     <Link
-                                                                        className="btn btn-qrc"
+                                                                        className="btn btn-primary"
                                                                         href={`/dashboard/qr-codes/${project.id}/configure`}>
                                                                         Generate QR
                                                                     </Link>

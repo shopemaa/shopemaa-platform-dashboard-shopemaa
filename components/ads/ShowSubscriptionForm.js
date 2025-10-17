@@ -192,7 +192,7 @@ const ShowSubscriptionForm = ({campaign, show, hideFormCallback}) => {
                                     onClick={() => {
                                         handleFormSubmit()
                                     }}
-                                    className="btn btn-qrc col-6">
+                                    className="btn btn-primary col-6">
                                     Complete
                                     &nbsp;
                                     {disableCompleteBtn && (
